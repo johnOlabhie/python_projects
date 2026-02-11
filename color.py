@@ -12,9 +12,6 @@ def add_color(color_list, name):
     for x in color_list:
         print(x);
        
-        
-
-
 
 
 #removing
@@ -30,7 +27,9 @@ def remove_color(color_list, name):
 
 #Listing list 
 
-def show_color_List(color_list, name):
+def show_color_List(color_list):
 
-    print(color_list);
+     print("Current list: ");
+     for x in color_list:
+        print(x);
 

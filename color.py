@@ -6,8 +6,14 @@
 def add_color(color_list, name):
 
     print("added item " + name); #testing 
-    color_list.append(name);
-    print(color_list)
+    color_list.append(name); # add to list 
+    print("Current list: ");
+
+    for x in color_list:
+        print(x);
+       
+        
+
 
 
 
@@ -15,10 +21,10 @@ def add_color(color_list, name):
 
 def remove_color(color_list, name):
 
-    #it will take user input and it will loop it with the values in the list 
-    # and if it mached it will remove the inpem and print current list 
-    # if it does not mach then say irem does not excist
-    print(color_list);
+    for name in color_list:
+        color_list.remove(name);#removed value from list 
+        print(color_list);
+
     
 
 

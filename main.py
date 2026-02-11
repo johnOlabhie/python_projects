@@ -23,7 +23,7 @@ current_lenth = len(color_List);
 
 while current_lenth <= max_length :
 
-    print(current_lenth);
+    #print(current_lenth); # testing for current length number 
 
     print("choose option");
     texNum = input();
@@ -35,7 +35,7 @@ while current_lenth <= max_length :
 
         word = input("Enter color: ");
         add_color(color_List, word); #function to add test 
-        current_lenth = len(color_List);
+        current_lenth = len(color_List); # update 
 
      # TO CAHGLGE YOUR SELF YOU ACN ADD A LOOP THAT LOPS THROGH LIST TO SEE IF YOU ALREADY HAVE SOEMTHING LIKE THAT 
      #IF YOU DONT IT WILL ADDI TO THE FUBTION IF YOU DO IT WI SAY YOU ALREDY HAVE THAT TASK. 
@@ -43,10 +43,12 @@ while current_lenth <= max_length :
 
     elif number == 2:
          word = input("Enter color to remove: ");
+         remove_color(color_List, word)
 
     
     else:
         print("Please enter number")
+        break
 else:
     print("List capaity reached.")
     print(color_List)

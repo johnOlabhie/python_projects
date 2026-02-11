@@ -18,6 +18,7 @@ def add_color(color_list, name):
 
 def remove_color(color_list, name):
 
+    name = name.lower(); # makr the case insensertive so that it maches stored colors regardless of case
     for name in color_list:
         color_list.remove(name);#removed value from list 
         print(color_list);

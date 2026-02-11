@@ -11,14 +11,9 @@ print("2 = remove color");
 print("3  = color List");
 print("4 = End")
 
-
-
-
 #user types word 
 color_list = [];
 
-
-i = 1;
 max_length = 9;
 current_lenth = len(color_list);
 
@@ -28,19 +23,26 @@ while current_lenth <= max_length :
 
     print("choose option");
     texNum = input();
+    
     number = int(texNum);
     
 
     if number == 1:
     #it should call upon the add taskfucntion and add user word
 
-        word = input("Enter color: ");
-        add_color(color_list, word); #function to add test 
-        current_lenth = len(color_list); # update 
+        word = input("Enter color: ").lower(); #make lowe case so that i can make it case-insebsitive matching when checking 
+
+        #add a lopp that checks if the clor already excist before adding it.
+        if word not in color_list:
+                add_color(color_list, word); #function to add test 
+                current_lenth = len(color_list); # update 
+        else:
+                print("Color aready excist")
 
      # TO CAHGLGE YOUR SELF YOU ACN ADD A LOOP THAT LOPS THROGH LIST TO SEE IF YOU ALREADY HAVE SOEMTHING LIKE THAT 
-     #IF YOU DONT IT WILL ADDI TO THE FUBTION IF YOU DO IT WI SAY YOU ALREDY HAVE THAT TASK. 
+     #IF YOU DONT IT WILL ADDI TO THE FUBTION IF YOU DO IT WI SAY YOU ALREDY HAVE THAT TASK..
      
+
 
     elif number == 2:
          word = input("Enter color to remove: ");

@@ -15,7 +15,6 @@ except FileNotFoundError:
 #stage on teaches how to call a functioni, organise those functions from other files, saving and lpadong data. 
 
 #start 
-
 print("1 = Add color");
 print("2 = remove color");
 print("3  = color List");
